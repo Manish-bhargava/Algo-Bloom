@@ -1,4 +1,10 @@
-const dotenv=require("dotenv");
+const dotenv = require('dotenv');
+
 dotenv.config();
-port=process.env.PORT;
-module.exports=port;
+
+module.exports = {
+    PORT: process.env.PORT || 3000,
+    ATLAS_DB_URL: process.env.ATLAS_DB_URL ,
+    LOG_DB_URL: process.env.LOG_DB_URL,
+    NODE_ENV: process.env.NODE_ENV || "development"
+}

@@ -1,4 +1,4 @@
-const logger = require('../config/logger.config');
+// const logger = require('../config/logger.config');
 const NotFound = require('../errors/notfound.error');
 const { Problem } = require('../models');
 
